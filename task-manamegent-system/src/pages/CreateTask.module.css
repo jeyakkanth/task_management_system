@@ -1,0 +1,131 @@
+.pageContainer {
+    max-width: 700px;
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.pageHeader {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.pageHeader h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #fff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+}
+
+.pageHeader p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.taskForm {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formGroup label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.formRow {
+    display: flex;
+    gap: 20px;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.required {
+    color: var(--danger);
+    margin-left: 4px;
+}
+
+.inputWithIcon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputWithIcon svg {
+    position: absolute;
+    left: 14px;
+    color: var(--text-muted);
+    pointer-events: none;
+}
+
+.inputWithIcon input,
+.inputWithIcon select {
+    padding-left: 44px;
+}
+
+.inputWithIcon select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.readOnlyBadge {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px dashed var(--glass-border);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.successToast {
+    margin-top: 24px;
+    padding: 16px;
+    background: rgba(34, 197, 94, 0.1);
+    color: #4ade80;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-weight: 600;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.submitBtn {
+    margin-top: 16px;
+    width: 100%;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 14px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .formRow {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

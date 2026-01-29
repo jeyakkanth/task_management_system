@@ -1,0 +1,121 @@
+.pageContainer {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.pageHeader {
+    margin-bottom: 32px;
+}
+
+.pageHeader h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #fff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+}
+
+.pageHeader p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.overdueCard {
+    border-left: 4px solid var(--danger);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.cardHeader h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.iconDanger {
+    color: var(--danger);
+}
+
+.overdueRow {
+    background: rgba(239, 68, 68, 0.03);
+}
+
+.overdueRow:hover td {
+    background: rgba(239, 68, 68, 0.06);
+}
+
+.taskTitle {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fca5a5;
+}
+
+.inlineIcon {
+    color: var(--danger);
+}
+
+.overdueDate {
+    color: var(--danger);
+    font-weight: 700;
+}
+
+.userMention {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px 10px;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.unassigned {
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.875rem;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 80px 40px;
+}
+
+.successIcon {
+    width: 64px;
+    height: 64px;
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 20px;
+    border: 2px solid rgba(34, 197, 94, 0.2);
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.1);
+}
+
+.emptyState p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

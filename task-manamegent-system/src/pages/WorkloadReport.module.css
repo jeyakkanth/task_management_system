@@ -1,0 +1,107 @@
+.pageContainer {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.pageHeader {
+    margin-bottom: 32px;
+}
+
+.pageHeader h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #fff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+}
+
+.pageHeader p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.cardHeader h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.iconPrimary {
+    color: var(--primary);
+}
+
+.workloadList {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.workloadItem {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.workloadInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userName {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.taskCount {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px 12px;
+    border-radius: 999px;
+}
+
+.progressBarBg {
+    height: 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+}
+
+.progressBarFill {
+    height: 100%;
+    border-radius: 7px;
+    transition: width 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+}
+
+.emptyState {
+    text-align: center;
+    padding: 60px;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    border: 1px dashed var(--glass-border);
+    border-radius: 12px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
